@@ -1,0 +1,205 @@
+<DOCTYPE html>
+
+<head>
+	<meta charset="utf-8"/> <!--Encodage caractère-->
+	<title>Compte</title>
+	<style>
+	textarea {
+		resize: none;
+		}
+		
+	fieldset {
+		margin-bottom: 35px;
+		border: solid #4BB5C1 5px;
+		border-right: none;
+		border-bottom: none;
+	}
+	
+	.left {
+		display: inline-block;
+		width: 160px;
+		text-align: right;
+		padding-right: 10px;
+		vertical-align: top;
+	}
+	
+	.left2 {
+		margin-left: 7%;
+	}
+	
+	input, textarea {
+		margin-bottom: 4px;
+	}
+	
+	label, input, textarea {
+		padding: 4px;
+	}
+	
+	
+	.field {
+		width: 400px;
+	}
+	
+	#cp {
+		width: 90px;
+	}
+	
+	#vil {
+		width: 254px;
+	}
+	
+	input[required] {
+		background: url('image/star.png') no-repeat top right;
+	}
+	</style>
+</head>
+	<body>
+		<form action="destination.html" method="post">
+		
+			<fieldset>
+			
+					<legend>Informations</legend>
+					
+					<div>
+						
+						<label class="left" for="no">N° Candidat :</label>
+						
+						<input class="field" id="no" name="no" type="text" PlaceHolder="Entrez ici votre numéro de Candidat." autofocus required>
+						
+						</div>
+						
+					<br>
+					
+						<div>
+						
+						<label class="left" for="nom">Nom :</label>
+						
+						<input class="field" id="nom" name="nom" type="text" PlaceHolder="Entrez ici votre nom." autofocus required>
+						
+						</div>
+						
+					<br>
+					
+						<div>
+						
+						<label class="left" for="prenom">Prénom :</label>
+						
+						<input class="field" id="prenom" name="prenom" type="text" PlaceHolder="Entrez ici votre prénom." autofocus required>
+						
+						</div>
+						
+					<br>
+					
+						<div>
+						
+						<label class="left">Sexe :</label>
+						<label for="sex">Homme</label>
+						<input type="radio" name="sexe" id="sexe" required>
+						<label for="sexe">Femme</label>
+						<input type="radio" name="sexe" id="sexe" required>
+						
+						</div>
+						
+					<br>
+					
+						<div>
+						
+						<label class="left" for="tel">Téléphone :</label>
+						
+						<input class="field" id="tel" name="tel" maxlength="10" type="tel" PlaceHolder="Entrez ici votre numéro de téléphone." autofocus required>
+						
+						</div>
+						
+					<br>
+					
+						<div>
+						
+						<label class="left" for="mail">Mail :</label>
+						
+						<input class="field" id="mail" name="mail" type="email" PlaceHolder="Entrez ici votre Adresse Mail." autofocus required>
+						
+						</div>
+						
+					<br>
+					
+						<div>
+						
+						<label class="left" for="mdp">Mot de passe :</label>
+						<input class="field" id="mdp" name="mdp" type="password" PlaceHolder="Entrez ici votre mot de passe." autofocus required>
+						
+						</div>
+						
+						<br>
+						
+						<div>
+						
+						<label class="left" for="lv1">LV1 :</label>
+						
+						<input class="field" id="lv1" name="**" type="text" PlaceHolder="Entrez ici votre LV1." autofocus required>
+						
+						</div>
+						
+					<br>
+					
+					<div>
+						
+						<label class="left" for="lv2">LV2 :</label>
+						
+						<input class="field" id="lv2" name="lv2" type="text" PlaceHolder="Entrez ici votre LV2.">
+						
+						</div>
+						
+					<br>
+					
+					<div>
+						
+						<label class="left" for="ddn">Date de naissance :</label>
+						
+						<input class="field" id="ddn" name="ddn" type="date" PlaceHolder="Entrez ici votre date de naissance." autofocus required>
+						
+						</div>
+						
+					<br>
+					
+					<div>
+						
+						<label class="left" for="ad">Adresse:</label>
+						
+						<input class="field" id="ad" name="ad" type="text" cols="50" rows="2" maxlength="50" PlaceHolder="Entrez ici votre adresse. (50 caractères max)" autofocus required>
+					
+						
+						</div>
+						
+					<br>
+					
+					<div>
+						
+						<label class="left" for="cp">Code Postal :</label>
+						
+						<input class="field" id="cp" name="cp" type="text" maxlength="5" PlaceHolder="" autofocus required>
+						
+						</div>
+						
+					<br>
+					
+						<div>
+						
+						<label class="left" for="pays">Pays :</label>
+						
+						<input class="field" id="pays" name="pays" type="text" PlaceHolder="Entrez ici votre Pays." autofocus required>
+						
+						</div>
+						
+					<br>
+					
+						
+			</fieldset>
+					
+				<input class="left2" type="submit" value="QCM">
+				
+				<input class="left2" type="Reset" value="Réinitialiser">
+					
+		</form>
+	</body>
+	
+</html>
