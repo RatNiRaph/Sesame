@@ -1,0 +1,71 @@
+<DOCTYPE html>
+
+<head>
+	<meta charset="utf-8"/> <!--Encodage caractère-->
+	<title>Discipline</title>
+	<style>
+	textarea {
+		resize: none;
+		}
+		
+	fieldset {
+		margin-bottom: 35px;
+		border: solid #4BB5C1 5px;
+		border-right: none;
+		border-bottom: none;
+	}
+	
+	.left {
+		display: inline-block;
+		width: 160px;
+		text-align: right;
+		padding-right: 10px;
+		vertical-align: top;
+	}
+	
+	.left2 {
+		margin-left: 7%;
+	}
+	
+	input, textarea {
+		margin-bottom: 4px;
+	}
+	
+	label, input, textarea {
+		padding: 4px;
+	}
+	
+	
+	.field {
+		width: 400px;
+	}
+	
+	#cp {
+		width: 90px;
+	}
+	
+	#vil {
+		width: 254px;
+	}
+	
+	input[required] {
+		background: url('image/star.png') no-repeat top right;
+	}
+	</style>
+</head>
+	<body>
+		<fieldset><legend>Discipline</legend>
+		<br>
+			<label for="discipline">Discipline<label>
+			<select id="discipline" name="discipline">
+				<optgroup label="Matière"> 
+				<option value="An">Anglais</option>
+				<option value="Ma">Maths</option>
+				</optgroup>
+			</select>
+		</fieldset>
+		
+		<input class="left2" type="submit" value="Démarrer">
+	</body>
+	
+</html>
